@@ -6,6 +6,7 @@ RUN apt-get -qq update \
     && apt-get -qq install --no-install-recommends sudo \
     && apt-get -qq install --no-install-recommends cmake \
     && apt-get -qq install --no-install-recommends rsync \
+    && apt-get -qq install  --no-install-recommends doxygen \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
